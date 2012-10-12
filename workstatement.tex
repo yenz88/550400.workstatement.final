@@ -1,0 +1,130 @@
+\documentclass[12pt,letterpaper]{article}
+
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{pdfsync}
+\usepackage{caption}
+\usepackage{color}
+\usepackage{bm}
+\usepackage{natbib}
+\usepackage{graphicx}
+
+\theoremstyle{definition}
+\newtheorem{dfn}{Definition}
+
+\begin{document}
+
+% The numbers below controls the amount of space between the following sections
+\def\shiftdowna{0.32in}  % Adjust for balance
+\def\shiftdownb{0.22in}  % Adjust for balance
+
+% Set up the boiler plate at the top of the page
+
+\begin{center}
+\textbf{{\large Project Work Statement}}\\
+
+
+% SPONSOR
+\vspace \shiftdowna
+\underline {Sponsor}\\ 
+\vspace{5pt}
+\textbf{{\large The Center for Responsive Politics}}\\
+
+
+% TITLE
+\vspace \shiftdowna
+\textbf{{\large Measuring Economic Effects of Presidential Elections}}
+
+
+% STUDENTS
+\vspace{0.35in}
+\vspace \shiftdownb
+\underline {Participant} \\
+\vspace{5pt}
+\text{Yen Theng Tan}, \texttt{yen@jhu.edu}
+
+% SPONSORS
+%\vspace \shiftdownb
+%\underline {Potential Participants}\\
+%\vspace{5pt}
+%Youngser Park, \texttt{parky@jhu.edu} \\
+%\vspace{3pt}
+%\text{Mihn Tang}, \texttt{mtang10@jhu.edu} \\
+%\vspace{3pt}
+%\text{Glen Coppersmith}, \texttt{coppersmith@jhu.edu}
+
+% DATE
+\vspace \shiftdowna
+Date: \today
+
+\end{center}
+
+\vfill  
+%Fill page to force following note to bottom
+%\footnoterule
+%\noindent \small{Any apparent association of this work to The GeoEye is
+%fictional one, and the sole purpose of this work is a class exercise}
+
+\newpage
+
+\section{Background} 
+The Center for Responsive Politics is the nation's premier research group tracking money in U.S. politics and its effect on elections and public policy. Nonpartisan, independent and nonprofit, the organization aims to create a more educated voter, an involved citizenry and a more transparent and responsive government. In short, the Center's mission is to (1) inform citizens about how money in politics affects their lives, (2) empower voters and activists by providing unbiased information, and (3) advocate for a transparent and responsive government.
+
+\section{Problem Statement}
+While there exist studies documenting the effects of the economy on a presidential candidate's chances of winning the election, there are few that investigate the effects of the presidential campaign on the economy.  Presidential campaigns are getting progressively more elaborate and more expensive, with prolific use of the media (and other mediums) to influence and generate voter turnout. While the economy is directly and positively impacted  by such activity, it can also be affected by other indirect factors. For example, in the most recent presidential election, President Barack Obama was caught on camera on assuring outgoing Russian President Dmitry Medvedev that he will have `more flexibility' to deal with contentious issues like missile defense after the presidential election. Such policy deferment practices show that these significant, economy-affecting decisions will be made only after the election is over, thus indicating that the economy was artificially 'held up' during the run-up to the election date.
+
+The sponsor currently has tasked us to investigate if, during the period before and after historical presidential elections, there exists statiscally significant fluctuations that can be tied to events related to the presidential election (i.e. announcement of election results).
+
+\section{Approach}
+Given the limited amount of time, we will study the recent concluded presidential election in 2004 (2008 is excluded due to staggering effects of the economic depression), and look at two sets of economic indicators - the  S\&P 500 index, and the price of U.S. 1-year Treasury Bill. 
+
+The S\&P 500, or the Standard \& Poor's 500, is a stock market index based on the common stock prices of 500 top publicly traded American companies, as determined by S\&P. It is commonly regarded as a good representation of the market and an indicator for the U.S. economy. 
+
+The U.S. 1-year Treasury Bills (`T-Bills') are short term loans issued to, and backed by the full faith and credit of, the United States Government. The price of these bills are also a good indicator of the confidence in the U.S. lending market, and the economy as a whole.
+
+Both the S\&P 500 Index and the price of T-bills are tracked highly frequently, with the former updated every second and the latter every day, and they thus serve as good reflections of the general economy to everyday events, and in particular, to the announcement of the presidential election results. Given that our sponsor's missions are to highlight the role of money in politics, to provide unbiased information, and to advocate for a more transparent government, our research would supplement this by testing the effect of the conclusion of a presidential election against these two economic indicators. An abnormal fluctuation that occurs the day immediately after the announcement of the presidential election would indicate that the election itself represents a major economic event.
+
+To test for abnormal fluctuations that are sufficient to warrant being classified as a major economic events, we would first have to collect and analyze daily fluctuations in the two economic indicators in the 5 years before and after the presidential election in question. Normalizing these historical fluctuations, we then compare the change in the two indicators the day before the announcement of the presidential results and the day after, and test if this change can be classified as a major economic event. 
+
+If our results indicate that the announcement of the presidential election results can be considered a major economic event, it provides a good grounding for our sponsors to advocate for more transparent campaign donation processes and how money can affect politics. This is because finance-savvy market players can profit from these large large fluctuations, and thus will have a powerful incentive to influence or aggravate the presidential campaign process.
+
+\section{Milestones}
+We have the following major deadlines:
+\begin{itemize}
+    \item Work Statement due date, Sep 28, 2012,
+    \item Data Acquisition due date, Oct 12, 2012,
+    \item Algorithm Design due date, Oct 19, 2012,
+    \item Midterm Presentation due date, Oct 26, 2012,
+    \item Progress Report due date, Nov 6, 2012,
+    \item Final Presentation due date, Nov 20, 2012,
+    \item Final Report due date, Nov 30, 2012.
+\end{itemize}
+
+\section{Deliverables}
+\subsection{From Team to Sponsor} % (fold)
+The following outputs are expected from this project:
+\begin{itemize}
+    \item List of economic indicators that are potentially be affected by past presidential campaigns, and the rationale behind them,
+    \item Statistical algorithm that analyzes fluctuations of selected economic indicators ,
+    \item R package with a complete set of documentations along with some test codes that can be used to reproduce our statistical test results,
+    \item Technical report and presentations summarizing the work. 
+\end{itemize}
+
+\subsection{From Sponsor to Team} % (fold)
+
+In order for our project to be of successful one, we will need:
+\begin{itemize}
+
+    \item Computing resources,
+    \item Timely responses to inquiries.
+
+\end{itemize}
+
+
+\newpage
+\bibliographystyle{plain}
+\bibliography{biblioWS}
+
+\end{document}
