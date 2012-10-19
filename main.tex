@@ -79,22 +79,22 @@
 \vspace \shiftdowna
 \underline {Sponsor}\\ 
 \vspace{5pt}
-\textbf{\large Sponsor Name} \\
+\textbf{\large The Center for Responsive Politics} \\
 \vspace\shiftdowna
-\textbf{{Final Report}}
+\textbf{{Midterm Presentation}}
 
 % TITLE
 \vspace \shiftdowna
-\textbf{{\Large Insurance Redlining}}
+\textbf{{\Large Measuring Economic Effects of Presidential Elections}}
 
 % STUDENTS
 \vspace{0.35in}
-\underline {Team Members}\\
+\underline {Team}\\
 \vspace{5pt}
-John Doe (Project Manager), Home Department\\
-\texttt{john.doe@jhu.edu} \\
-\vspace{10pt}
-Jane Doe (Report Coordinator), Home Department
+Yen Theng Tan, Economics Department\\
+\texttt{yen@jhu.edu} \\
+%\vspace{10pt}
+%Jane Doe (Report Coordinator), Home Department
 %\texttt{jane.doe@jhu.edu}
 
 % INSTRUCTOR
@@ -105,10 +105,10 @@ Jane Doe (Report Coordinator), Home Department
 \texttt{nhlee@jhu.edu}
 
 % Consultants
-\vspace \shiftdownb 
-\underline {Consultant}\\
-\vspace{5pt}
-Jason Bourne\\
+%\vspace \shiftdownb 
+%\underline {Consultant}\\
+%\vspace{5pt}
+%Jason Bourne\\
 
 % DATE
 \vspace \shiftdowna
@@ -118,32 +118,37 @@ Date: Last Complied on \today
 
 \vfill  %Fill page to force following note to bottom
 \footnoterule
-\noindent \small{This project was supported by XYZ.}
+\noindent \small{This project was supported by the Johns Hopkins University Economics Department.}
 
 % Begin ABSTRACT
 \ifthenelse{\boolean{@twoside}}{\myclearpage}{}
 \prefacesection{Abstract}
 
+While there exist studies documenting the effects of the economy on a presidential candidate's chances of winning the election, there are few that investigate the effects of the presidential campaign on the economy.  Besides the direct effects from presidential campaigns that are getting progressively more elaborate and more expensive, the increasing political inaction from fear of criticism is indirectly costly as well. We are tasked by our sponsor, the Center for Responsive Politics, to investigate if, during the period before and after historical presidential elections, there exists statiscally significant fluctuations that can be tied to events related to the presidential election, specifically, the announcement of election results. First we identified two measures of the economy - 1) the Standard \& Poor's 500, a stock market index based on the common stock prices of 500 top publicly traded American companies, as determined by S\&P, and 2) the price of U.S. 1-year Treasury Bills (`T-Bills'), short term loans issued to, and backed by the full faith and credit of, the United States Government. These data for these two indicators, generally perceived to be good representations of the market and indicators of the U.S. economy, are collected for the 5 years before and after the 2004 presidential election. The time series of these two indicators are then analyzed using change-point detection. Changepoints are times of discontinuities in a time series that can be induced from changes in observation, and thus a notable occurrence during the announcement of the presidential results would indicate a statistically significant event. From this analysis, we can then come to a reasonable assessment of to what extent the presidential elections affect the economy.
+
+
 % Begin ACKNOWLEDGMENTS
 \ifthenelse{\boolean{@twoside}}{\myclearpage}{}
 \prefacesection{Acknowledgments}
+
+I would like to acknowledge Dr. N. H. Lee for his introduction to change-point detection as a statistical tool, and his knowledge of R, without which none of this is possible
 
 % Table of contents, List of Figures, and List of Tables.
 \ifthenelse{\boolean{@twoside}}{\myclearpage}{}
 \tableofcontents
 
-\ifthenelse{\boolean{@twoside}}{\myclearpage}{}
-\listoffigures
+%\ifthenelse{\boolean{@twoside}}{\myclearpage}{}
+%\listoffigures
 
-\ifthenelse{\boolean{@twoside}}{\myclearpage}{}
-\listoftables
+%\ifthenelse{\boolean{@twoside}}{\myclearpage}{}
+%\listoftables
 
 
 \renewcommand{\thefootnote}{\arabic{footnote}}
 \setcounter{footnote}{0}
 
 \ifthenelse{\boolean{@twoside}}{\myclearpage}{}
-%\include{A_Introduction}
+\include{A_Introduction}
 %\include{B_TechnicalBackground}
 %\include{C_ProblemStatement}
 %\include{D_Analysis}

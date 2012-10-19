@@ -1,0 +1,20 @@
+\frametitle{Time Series Model}
+        \begin{block}{Example on Page 224}
+    \begin{lstlisting}
+require(vars);
+
+fittedmodel <- VAR(myts,p=1,type='trend');
+
+print(fittedmodel);
+    \end{lstlisting}
+    \begin{itemize}
+        \item Yet another way to fit a VAR($1$) model in R
+        \item VAR function from vars package is somewhat general than ar
+            function in that you can have linear term, i.e., for
+            \texttt{type=`both'}, the RHS of the VAR($1$) formula
+            contains
+            \begin{align*}
+                \alpha_0 + \alpha_1 t
+            \end{align*}
+    \end{itemize}
+\end{block}
